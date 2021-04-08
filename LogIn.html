@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log In</title>
+        <style type="text/css">
+            .container{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                
+            }
+            form{
+                border:1px solid black;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 50px;
+                padding-right: 10px;
+                box-shadow: 8px 5px 10px 5px black;
+            }
+            a{
+                list-style: none;
+                font-size:12px;
+                text-decoration: none;
+            }
+            input{
+                border-radius: 20px;
+                border:none;
+                border:1px solid black;
+                padding-left: 10px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+           <form method="post" action="">
+            <h2>TO visit our website , please log in.</h2>
+            <label name="email">Email</label>
+            <input type="text" id="email" onkeyup="emailValid()" placeholder="Enter your email">
+            <br>
+            
+            <small>We agree  we don't share your email with any other.</small>
+            <br>
+            <br>
+            <label name="pass">Password</label>
+            <input type="password" id="pass" placeholder="Enter your Password">
+            <br>
+            <br>
+            <a href="#">Forgotten password?</a>
+            <a href="wb.html" style="padding-left: 200px">Log In</a>
+            <br>
+            <a href="Creat.html" style="padding-left: 230px">Creat a New Account</a>
+            </form>
+        </div>
+    </body>
+</html>

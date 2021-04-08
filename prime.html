@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+   <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatiable"content="if-edge">
+        <title></title>
+        <style type="text/css" media="screen">
+            body{
+                background-color:aqua;
+            }
+            nav#myNav{
+               position:fixed;
+                width:200px;
+                height:100vh;
+                background-color: rgba(0, 0, 0, 1);
+                z-index:99;
+                
+                
+                
+            }
+           #openNav{
+                 position: fixed;
+               top:5px;
+                left:5px;
+             
+               z-index: -1;
+              
+            }
+            .line{
+                width:30px;
+               height:5px;
+               margin:5px;
+               background-color: black;
+               margin:5px;
+               border-radius: 30px;
+            }
+            #closeNav{
+                
+                color:white;
+                margin-top: -0px;
+            
+                
+               
+               
+            }
+            ul{
+                position: absolute;
+                margin-top:60px;
+               
+               
+                
+            }
+            ul li{
+                list-style: none;
+                 border-bottom: 1px slod black;
+                padding-top: 30px;
+                 border-bottom: 1px solid white;
+                left:-100px;
+               
+            
+            }
+            ul li a{
+                text-decoration: none;
+                color:white;
+                padding-top: 30px;
+               
+               
+            }
+            .cont{
+                padding-left: 100px;
+            }
+            .pr{
+                margin-left:200px;
+                margin-top:10px;
+            }
+            .pr img{
+                border-radius:50%;
+                
+            }
+            .prm{
+                margin-left:150px;
+                color:brown;
+                font-size:30px;
+            }
+            .link
+            {
+                width:670px;
+                height:20px;
+                 margin-left:160px;
+                
+            }
+            .link a{
+                text-decoration:none;
+                padding-left: 10px;
+               
+            }
+            .ft{
+                width:"600px";
+                height:25px;
+                background-color: blue;
+            }
+            .ft p{
+                font-size:10px;
+                color:white;
+            }
+            .pt{
+                margin-left:200px;
+            }
+            .ptr{
+                margin-left:190px;
+                margin-top:-10px;
+            }
+            
+          .an p{
+              
+                color:blue;
+              animation-name:let;
+              animation-duration: 4s;
+              animation-iteration-count: infinite;
+              
+            }
+            @keyframes let{
+                from{
+                         margin-left: 600px;
+                }
+                to{
+                    margin-left:-330px;
+                }
+                
+            }
+            a{
+                text-decoration: none;
+            }
+        </style>
+       </head>
+       <body>
+        <nav id="myNav">
+               <div id="openNav">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+               <div id="closeNav">Close</div>
+               <ul>
+                   <li><a href="ab.html">About</a></li>
+                   <li><a href="parents.html">Family</a></li>
+                   <li><a href="person.html">Personal Life</a></li>
+                   <li><a href="edu.html">Educational life</a></li>
+                   <li><a href="political.html">Plitical Life</a></li>
+                   <li><a href="aw.html">Award</a></li>
+               </ul>
+           </nav>
+          <div class="cont">
+           <div class="pr"><img src="FB_IMG_1604918892889.jpg" width="200px" height="200px"></div>
+           <div class="prm">
+           <p>Prime Minister Sheikh Hasina</p>
+           
+       </div>
+       <div class="an">
+           <p>Prime Minister of Sheikh Hasina</p>
+       </div>
+           </div>
+       <a href="lt.html">
+       <div class="ft">
+           <div class="pt"><p>All rights preserved by Rukhsana Khatun</p></div>
+           <div class="ptr"><p>JAshore University of Science and Technology</p></div>
+           </div></a>
+           <script>
+               
+               var nav = document.getElementById('myNav');
+               var open = document.getElementById('openNav');
+               var close = document.getElementById('closeNav');
+               nav.style.left='200px';
+               open.addEventListener('click', function(){
+                   nav.style.left='0px';
+                  
+                  
+               })
+               close.addEventListener('click', function(){
+                   nav.style.left='-200px';
+               })
+           </script>
+       </body>
+</html>
